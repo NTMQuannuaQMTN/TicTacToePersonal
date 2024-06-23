@@ -1,7 +1,7 @@
 // Connect 4 game logic
 
-const ROWS = 6;
-const COLS = 7;
+const ROWS = 3;
+const COLS = 3;
 let currentPlayer = 'red';
 let gameBoard = [];
 let gameRunning = true;
