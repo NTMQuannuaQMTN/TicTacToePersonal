@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 1vw;
+    margin: 0;
+}
+
+main {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* gap: 20px; */
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw); /* Adjust column size as needed */
+    grid-template-rows: repeat(3, 10vw); /* Adjust row size as needed */
+    gap: 1vw;
+    background-color: blue; /* Placeholder color */
+    border: 2px solid black;
+}
+
+.game-cell {
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.sidebar {
+    padding: 1vw;
+    width: 200px; /* Adjust width as needed */
+    text-align: center;
+    margin: auto;
+}
+
+.sidebar p {
+    color: white;
+}
+
+.player-turn {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 1vw;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+@media only screen and (min-width: 600px) {
+    .game-board {
+        display: grid;
+        grid-template-columns: repeat(3, 8vw); /* Adjust column size as needed */
+        grid-template-rows: repeat(3, 8vw); /* Adjust row size as needed */
+        gap: 0.8vw;
+        background-color: blue; /* Placeholder color */
+        border: 2px solid black;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .game-board {
+        display: grid;
+        grid-template-columns: repeat(3, 7vh); /* Adjust column size as needed */
+        grid-template-rows: repeat(3, 7vh); /* Adjust row size as needed */
+        gap: 0.7vh;
+        background-color: blue; /* Placeholder color */
+        border: 2px solid black;
+    }
+}
